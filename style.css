@@ -1,0 +1,239 @@
+/*CONFIGURAÇÃO BASE*/ 	
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+body { 
+background-image: url(ecosaviors2.jpg); 
+background-size: 100%; 
+font-family: 'Days One', sans-serif; 
+} 
+
+li a { 
+text-decoration: none; 
+color: rgb(223, 223, 223); 
+} 
+
+.escolher, .voltar a { 
+text-decoration: none; 
+color: white; 
+} 
+
+main { 
+width: 940px; 
+position: relative; 
+margin: 0 auto; 
+} 
+
+footer { 
+position:absolute; 
+top: 97%; 
+left: 38.5%; 
+font-size: 10px; 
+color: white; 
+} 
+
+/*PÁGINA INÍCIAL*/ 
+
+#logo { 
+font-size: 100px; 
+font-weight: bold; 
+text-shadow: 0 0 10px #77CB4B; 
+position: absolute; 
+top: 15%; 
+left: 20%; 
+padding: 20px; 
+margin: 0 auto; 
+text-align: center; 
+color: #B6E59D; 
+-webkit-text-stroke: 1px rgba(98, 192, 90, 0.5); 
+filter: drop-shadow(0 0 50px #77CB4B) drop-shadow(0 0 500px #77CB4B); 
+} 
+
+#novojogo { 
+position: absolute; 
+top: 50%; 
+left: 42%; 
+font-size: 25px; 
+font-weight: bold; 
+padding: 15px 30px; 
+margin: 0 auto; 
+text-align: center; 
+transition: all 0.1s; 
+clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%); 
+background: #77CB4B; 
+border-radius: 10px; 
+} 
+
+#novojogo a{ 
+text-decoration: none; 
+color: white 
+
+} 
+#novojogo:hover { 
+color: white; 
+background-clip: none; 
+cursor: pointer; 
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); 
+} 
+
+/*PÁGINA DE SELEÇÃO DE PERSONAGENS*/ 
+
+.titulo-page { 
+font-size: 25px; 
+font-weight: bold; 
+text-align: center; 
+margin: 40px 0 0 0; 
+box-sizing: border-box; 
+color: rgb(223, 223, 223); 
+} 
+
+.escolhas { 
+position: absolute; 
+top: 15%; 
+display: flex;
+left: 15%;
+} 
+
+.escolhas img { 
+width: 60%; 
+border-radius: 1000px; 
+box-shadow: 5px 5px 10px #000000; 
+border: groove 4px; 
+} 
+
+.escolhas li { 
+text-align: center; 
+vertical-align: top; 
+box-sizing: border-box; 
+display: inline-block; 
+width: 25%; 
+height: 95%; 
+margin: 20px 13px; 
+padding: 20px 25px; 
+border: groove 5px #fff; 
+background: rgba(0,0,0, 0.5); 
+border-radius: 10px; 
+box-shadow: 5px 5px 10px #000000; 
+} 
+
+.escolhas li:hover { 
+transform: scale(1.1); 
+transition: 2s; 
+background: rgba(0,0,0, 0.8); 
+cursor: pointer; 
+} 
+
+.titulo-escolha { 
+font-size: 30px; 
+font-weight: bold; 
+text-align: center; 
+vertical-align: bottom; 
+padding: 10px 0 0 0; 
+color: rgb(223, 223, 223); 
+} 
+
+.descricao-escolha { 
+font-size: 18px; 
+padding: 12px 0 0 0; 
+} 
+
+/*PÁGINAS DOS PERSONAGENS*/ 
+
+.personagem { 
+border: groove; 
+border-radius: 1000px; 
+width: 22%; 
+text-align: center; 
+margin: 30px 39%; 
+box-shadow: 5px 5px 10px #000000; 
+} 
+
+.dialogo { 
+width: 70%; 
+font-size: 15px; 
+line-height: 1.5em; 
+color: white; 
+padding: 20px; 
+text-align:justify; 
+margin: 0 13%; 
+border: solid 1px white; 
+border-radius: 20px; 
+background-color: rgba(0, 0, 0, 0.5); 
+box-shadow: 5px 5px 10px #000000; 
+} 
+
+/*PÁGINA DE PERDA E GANHO*/ 
+
+.caixa-dialogo { 
+color: white; 
+padding: 20px; 
+text-align: center; 
+margin: 20% 10% 10%; 
+border-radius: 20px; 
+background-color: rgba(0, 0, 0, 0.5); 
+box-shadow: 5px 5px 10px #000000; 
+border: solid 1px white; 
+} 
+
+.titulo-ganho, .titulo-perda { 
+font-size: 40px; 
+font-weight: bold; 
+margin: 15px 0px; 
+} 
+
+.titulo-perda { 
+color: red; 
+text-shadow: 0 0 0.2em rgb(255, 119, 119), 0 0 0.2em rgb(255, 119, 119), 0 0 0.2em rgb(255, 119, 119) 
+} 
+
+.titulo-ganho { 
+color:#77CB4B; 
+text-shadow: 0 0 0.2em rgb(146, 250, 89), 0 0 0.2em rgb(146, 250, 89), 0 0 0.2em rgb(146, 250, 89) 
+} 
+
+.texto-perda, .texto-ganho { 
+font-size: 15px; 
+padding: 20px; 
+} 
+
+/*BOTÕES*/ 
+
+.escolher { 
+font-family: 'Days One', sans-serif; 
+margin: 30px 44.5%; 
+text-align: center; 
+padding: 10px 20px; 
+background-color: black; 
+color: white; 
+font-size: 15px; 
+font-weight: bold; 
+border: solid white 0.1em; 
+clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%); 
+} 
+
+.escolher:hover { 
+cursor: pointer; 
+transform: scale(1.1); 
+transition: 0.5s all; 
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%); 
+} 
+
+.voltar { 
+font-family: 'Days One', sans-serif; 
+margin: 30px 38%; 
+text-align: center; 
+padding: 10px 20px; 
+background-color: black; 
+color: white; 
+font-size: 15px; 
+font-weight: bold; 
+border: solid white 0.1em; 
+width: 200px; 
+clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%); 
+} 
+
+.voltar:hover { 
+cursor: pointer; 
+transform: scale(1.1); 
+transition: 0.5s all; 
+clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); 
+}
